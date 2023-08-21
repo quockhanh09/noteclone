@@ -157,8 +157,8 @@
       <p>
         If you have any questions or any other ideas on improving aNotepad,
         please send an email at
-        <a href="support@anotepad.com">support@anotepad.com</a>. We'd
-        love to hear from you!
+        <a href="support@anotepad.com">support@anotepad.com</a>. We'd love to
+        hear from you!
       </p>
     </div>
   </div>
@@ -176,11 +176,14 @@ export default {
   /* padding-top: 20px; */
   outline: none;
   color: #333;
+  margin-top: 2%;
 }
 
 h2 {
   font-weight: normal;
   font-size: 30px;
+  margin-bottom: 15px;
+  margin-top: 20px;
 }
 
 p {
