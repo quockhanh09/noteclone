@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="main-RL">
     <p>
       To access your notes from anywhere and never lose them, just create an
       account (it will take less than a minute). If you already have an account,
@@ -7,13 +7,13 @@
     </p>
     <div>
       <h2>Create an Account</h2>
-      <form class="form-horizontal">
+      <form class="from-Create">
         <div class="Username-from">
           <label for="reg-username" class="control-label">Email</label>
           <input
             type="text"
             id="reg-username"
-            class="form-control"
+            class="Create-input"
             placeholder="Enter Email"
             v-model="regUsername"
             required
@@ -25,7 +25,7 @@
           <input
             type="password"
             id="reg-password"
-            class="form-control"
+            class="Create-input"
             placeholder="New Password"
             v-model="regPassword"
             required
@@ -41,13 +41,13 @@
 
     <div>
       <h2>Login</h2>
-      <form class="form-horizontal">
+      <form class="from-Create">
         <div class="Username-from">
           <label for="login-username" class="control-label">Email</label>
           <input
             type="text"
             id="login-username"
-            class="form-control"
+            class="Create-input"
             placeholder="Enter Email"
             v-model="loginUsername"
             required
@@ -59,7 +59,7 @@
           <input
             type="password"
             id="login-password"
-            class="form-control"
+            class="Create-input"
             placeholder="Enter Password"
             v-model="loginPassword"
             required
@@ -86,18 +86,34 @@
           </div>
           <div class="recaptcha-checkbox-checkmark" role="presentation"></div>
 
-          <label class="rc-anchor-center-item rc-anchor-checkbox-label" aria-hidden="true" role="presentation" id="recaptcha-anchor-label">
+          <label
+            class="rc-anchor-center-item rc-anchor-checkbox-label"
+            aria-hidden="true"
+            role="presentation"
+            id="recaptcha-anchor-label"
+          >
             <span></span>Tôi không phải là người máy
           </label>
           <div class="rc-anchor-normal-footer">
-            <div class="rc-anchor-logo-portrait" aria-hidden="true" role="presentation">
+            <div
+              class="rc-anchor-logo-portrait"
+              aria-hidden="true"
+              role="presentation"
+            >
               <div class="rc-anchor-logo-img rc-anchor-logo-img-portrait"></div>
               <div class="rc-anchor-logo-text">reCAPTCHA</div>
             </div>
             <div class="rc-anchor-pt">
-              <a href="https://www.google.com/intl/vi/policies/privacy/" target="_blank">Bảo mật</a>
+              <a
+                href="https://www.google.com/intl/vi/policies/privacy/"
+                target="_blank"
+                >Bảo mật</a
+              >
               <span aria-hidden="true" role="presentation"> - </span>
-              <a href="https://www.google.com/intl/vi/policies/terms/" target="_blank">Điều khoản</a
+              <a
+                href="https://www.google.com/intl/vi/policies/terms/"
+                target="_blank"
+                >Điều khoản</a
               >
             </div>
           </div>
@@ -132,7 +148,7 @@ export default {
 </script>
 
 <style scoped>
-.main {
+.main-RL {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
@@ -144,7 +160,7 @@ form {
   margin-top: 0em;
 }
 
-.form-horizontal .control-label {
+.from-Create .control-label {
   padding-top: 7px;
   margin-bottom: 0;
   float: left;
@@ -162,7 +178,7 @@ h2 {
   left: 150px;
 }
 
-.form-horizontal {
+.from-Create {
   margin-left: 250px;
 }
 
@@ -204,7 +220,7 @@ label {
   padding-bottom: 15px;
 }
 
-.form-control {
+.Create-input {
   display: inline;
   margin-right: 10px;
   width: 500px;
@@ -335,7 +351,6 @@ form input:focus {
   padding-right: 1px;
   padding-top: 2px;
   padding-bottom: 2px;
-  
 }
 
 .rc-anchor-pt a:hover {
@@ -359,6 +374,4 @@ form input:focus {
 .rc-anchor-checkbox-label {
   margin-left: 10px;
 }
-
-
 </style>
